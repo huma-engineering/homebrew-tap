@@ -3,33 +3,36 @@ cask "craft-cli" do
   name "craft-cli"
   desc "A CLI tool for Huma Craft Cloud platform"
   homepage "https://github.com/huma-engineering/craft-cloud"
-  version "0.1.0-rc.12"
+  version "0.1.0-rc.13"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "craft-cli"
+  bash_completion "completions/craft-cli.bash"
+  zsh_completion "completions/_craft-cli"
+  fish_completion "completions/craft-cli.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "f934b3651683b9323d377faa1ee16f3f76b11b8325069448b37b1c7293130944"
+      sha256 "ce4ee11d3cdf1894233920332c696f04a4ae1959209848fa01d43ceb29227e9b"
     end
     on_arm do
       url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "a090f4aba3de8031646d0c5aa731697c921d6cce04fe34e723b9029c52151ddb"
+      sha256 "34d68714a7f8d2fb3b55ae87718fe6790e53ad84acbc09eb659a0bd7019f11e3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "ebaa4e4fa261ed43c530a88e35ffb56e9a43b36dd64b2739b8b567a8eba162c9"
+      sha256 "895b309746d42914b957b5c179e0431ce0db56c7f6f91a67707af09eb07d24be"
     end
     on_arm do
       url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "61593a124c8a4074e22e81314fa2c958c74cbf554da108a7577d3c291881c9a7"
+      sha256 "07d86523a26dd2bf1a276ee305141af1d29014d53c209db4e0d557ba0992dc47"
     end
   end
 
@@ -37,6 +40,7 @@ cask "craft-cli" do
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/craft-cli"]
     end
+    system_command "#{staged_path}/craft-cli", args: ["version"]
   end
 
   # No zap stanza required

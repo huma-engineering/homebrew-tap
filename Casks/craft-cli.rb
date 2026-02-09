@@ -3,7 +3,7 @@ cask "craft-cli" do
   name "craft-cli"
   desc "A CLI tool for Huma Craft Cloud platform"
   homepage "https://github.com/huma-engineering/craft-cloud"
-  version "0.1.0-rc.9"
+  version "0.1.0-rc.10"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "craft-cli" do
 
   on_macos do
     on_intel do
-      url "https://github.com/huma-engineering/craft-cloud/releases/download/v#{version}/craft-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "3b137b5cf7ad0318d2307c8c53d15c2eadccd1b91b3d2797148e3c51d577e3e0"
+      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_darwin_amd64.tar.gz"
+      sha256 "7d77b378aa73eab0af79fc7efd9d4a55c27ab8b71567f4bb1d448307e717781f"
     end
     on_arm do
-      url "https://github.com/huma-engineering/craft-cloud/releases/download/v#{version}/craft-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "a10f5f271de11290ff71c26403a595550ebf138ea7e1bb96e740c425b5e59433"
+      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_darwin_arm64.tar.gz"
+      sha256 "9d5e1cdde65b1d67655ce1d21d8fb581ee19bd6b4a9178d33bdb71f15ab6fc6d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/huma-engineering/craft-cloud/releases/download/v#{version}/craft-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "dc15b11c09358c32c83d5c1f16e58aa59320e3ccdd27700da88c9827154a315a"
+      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_linux_amd64.tar.gz"
+      sha256 "1f5ba66d9a9b62453586f9981fde128629737b4402570b5fe6a887fc9e176637"
     end
     on_arm do
-      url "https://github.com/huma-engineering/craft-cloud/releases/download/v#{version}/craft-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "70cd774c51c60e878d4917babc4828aa50726acd868964a0a1dd2d1c904573ef"
+      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_linux_arm64.tar.gz"
+      sha256 "13fc6b22868f8296655927efc658fbc0d8326015dad433cdc18bc0926fe4e86f"
     end
   end
 

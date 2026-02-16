@@ -7,14 +7,14 @@ A simple CLI tool for the Huma Craft Cloud platform.
 ### Using Homebrew
 
 ```sh
-brew tap huma-engineering/craft-cli
+brew tap huma-engineering/tap
 brew install craft-cli
 ```
 
 Or, for a one-liner:
 
 ```sh
-brew install huma-engineering/craft-cli/craft-cli
+brew install huma-engineering/tap/craft-cli
 ```
 
 ## Usage

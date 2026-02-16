@@ -3,7 +3,7 @@ cask "craft-cli" do
   name "craft-cli"
   desc "A CLI tool for Huma Craft Cloud platform"
   homepage "https://github.com/huma-engineering/craft-cloud"
-  version "0.2.2"
+  version "0.2.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,23 +16,23 @@ cask "craft-cli" do
 
   on_macos do
     on_intel do
-      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "58d0d5f585e96439d15a09b7f0355100dbe1463c358b056a7ccf89a6e11acbdf"
+      url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_darwin_amd64.tar.gz"
+      sha256 "41fc45eebf4f563e87d8bce12af8af6c8fa1253deb67df57ff505380974e9155"
     end
     on_arm do
-      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "e276c30d262b339762daa6b92be39f0648ce1c1966dcf92380801ca65f358c23"
+      url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_darwin_arm64.tar.gz"
+      sha256 "976454dbb6d60a029a0a2e40f95a50abd8ce23b108ca4d68c6fd573c0a6a3939"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "0c9cb6b39ecb8645cb82dc32e84f54d4e71d337dd4b88045672cd7bad71030c1"
+      url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_linux_amd64.tar.gz"
+      sha256 "ca4ffcab0bebaf99137ff6f9b3aa27df659f015c916dd549c04439d7a07bb5f0"
     end
     on_arm do
-      url "https://github.com/huma-engineering/homebrew-craft-cli/releases/download/v#{version}/craft-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "637dbceb70a9a4049ae42b00a9e3fbccd59c9566753e6effc96f59cc474205b6"
+      url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_linux_arm64.tar.gz"
+      sha256 "41256e0e0bdf61623e8a49c430bbb5b3aa939c0124d14f92f125c919a1c5ba12"
     end
   end
 

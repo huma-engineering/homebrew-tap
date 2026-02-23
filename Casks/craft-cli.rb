@@ -3,7 +3,7 @@ cask "craft-cli" do
   name "craft-cli"
   desc "A CLI tool for Huma Craft Cloud platform"
   homepage "https://github.com/huma-engineering/craft-cloud"
-  version "0.2.6"
+  version "0.2.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "craft-cli" do
   on_macos do
     on_intel do
       url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "d424a3ef456a5f9f520192c254ca42a8a974c026d15508ade62677524b744606"
+      sha256 "8fc5c28d576ef9b1fdae22e3fe3a580adbd484d4c9409f1c088671beed721789"
     end
     on_arm do
       url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "5e4627505f35c1beb233ae9f9cb01aceded7e6a4b6143a1617cd7559b9a20414"
+      sha256 "fe5a9be49df183176226cc01f1a923f502063ceabc7a3bd7819963381b35bbf0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_linux_amd64.tar.gz"
-      sha256 "ffe9ea23208f28fe0e9d3a6a9e7dbbd02568f9fdd1604ee56597ccab1667fecb"
+      sha256 "4d8bcaecc545cdb0c652353435a3010f75815d313116d42507ea5637c701c751"
     end
     on_arm do
       url "https://github.com/huma-engineering/homebrew-tap/releases/download/v#{version}/craft-cli_#{version}_linux_arm64.tar.gz"
-      sha256 "9cdcba3f0064119c9e0289de31205982c21509e95365187b41bcd90f48941a8e"
+      sha256 "25d9b918d5b9eaaed06e54490cf4c49f9cb1b55e643e3b178f3c01890f43ab31"
     end
   end
 
